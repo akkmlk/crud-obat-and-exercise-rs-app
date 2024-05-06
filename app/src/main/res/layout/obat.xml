@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_nama_obat"
+            android:text="Paracetamol"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_price_obat"
+            android:text="15000"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/tv_nama_obat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_category_obat"
+            android:text="Cair"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/tv_price_obat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/cbObat"
+            android:layout_toLeftOf="@id/btnEditObat"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+<!--        <RelativeLayout-->
+<!--            android:layout_toLeftOf="@id/btnEditObat"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/cbObat"-->
+<!--                android:text="kjhgfd"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layoutDirection="rtl"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--        </RelativeLayout>-->
+
+        <ImageButton
+            android:layout_centerInParent="true"
+            android:id="@+id/btnEditObat"
+            android:layout_toLeftOf="@id/btnDeleteObat"
+            android:src="@drawable/ic_edit"
+            android:background="@color/purple_500"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <ImageButton
+            android:id="@+id/btnDeleteObat"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_delete"
+            android:background="@color/red"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
